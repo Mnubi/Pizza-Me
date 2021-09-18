@@ -1,0 +1,10 @@
+body{
+    background-color: red;
+    color: gold;
+}
+#order{
+    background-color: black;
+    font-size: 25px;
+    padding: 30px;
+    border-radius: 50%;
+}
