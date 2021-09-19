@@ -9,3 +9,9 @@ body{
     padding: 30px;
     border-radius: 50%;
 }
+.data{
+    padding-top: 10px;
+    margin-left: 300px;
+    align-items: center;
+    width: 60%;
+}
