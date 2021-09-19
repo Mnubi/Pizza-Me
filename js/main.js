@@ -1,6 +1,7 @@
 // function to alert upon choice home delivery
 function delivery() {
     alert("Home delivery cost is Ksh. 320");
+    prompt("Enter your location")
 }
 
 // slide show
