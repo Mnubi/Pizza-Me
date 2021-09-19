@@ -76,19 +76,22 @@
       <h3>type of pizza crusting</h3>
       <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
         <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+        <option value="200">Stuffed crust  Ksh.200</option>
+        <option value="150">Thin crust  Ksh.150</option>
+        <option value="300">Thick crust Ksh.300</option>
+        <option value="250">Cracker crust  Ksh.250</option>
+        <option value="350">Cheese crust  Ksh.350</option>
       </select>
 
       <h3>Choose pizza toppings</h3>
       <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
         <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+        <option value="100">onions 100/=</option>
+        <option value="100">Sausages 100/=</option>
+        <option value="200">Mushroom 200/=</option>
+        <option value="120">Pepperoni 120/=</option>
+        <option value="150">Becons 150/=</option>
+        <option value="130">Black olive 130/=</option>
       </select>
 
       <h3>Number of pizza</h3>
@@ -101,7 +104,7 @@
           Pick up
         </label>
       </div>
-      <div class="form-check" onclick="myFunction()">
+      <div class="form-check" onclick="delivery()">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="home" checked>
         <label class="form-check-label" for="flexRadioDefault2">
           Home delivery 
@@ -115,7 +118,7 @@
 
 
     <script>
-      function myFunction() {
+      function delivery() {
         alert("Home delivery is Ksh. 320");
       }
       </script>
