@@ -22,10 +22,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="#about">About us</a>
               </li>                    
             </ul>
           </div>
@@ -33,34 +33,22 @@
     </nav>
 
     <div class="row align-items-center">
-      <div class="row align-items-center">
-        <div class="col">
-          <img src="./Images/cracker.jpg" height="450px" width="450px" alt="pizza">
-        </div>
-
-        <div class="col">
-          <h2>It is basically <strong>PIZZA!!!</strong></h2>
-          <h2>"Beauty comes in all shapes and sizes. Small, large, circle, square, thin crust, thick crust, stuffed crust, extra toppings."</h2>
-          <button id="order"><a href=""></a>Order Now!!</button>
-        </div>
+      <div class="pizza" style="max-width:500px">
+        <img class="mySlides" src="./Images/Flatbread-Pizza.jpg" style="width:100%" height="400px">
+        <img class="mySlides" src="./Images/gluten free.jpg" style="width:100%" height="400px">
+        <img class="mySlides" src="./Images/onion.jpg" style="width:100%" height="400px">
+        <img class="mySlides" src="./Images/pepperoni.jpg" style="width:100%" height="400px">
+        <img class="mySlides" src="./Images/cracker.jpg" style="width:100%" height="400px">
+        <img class="mySlides" src="./Images/olive.jpg" style="width:100%" height="400px">
       </div>
 
-      <div class="about">
-        <h1>About Us</h1>
-        <p>Pizza-Me is a Kenyan pizza restaurant franchise. It is the fourth largest pizza delivery restaurant chain in the the nation, with headquarters in Nairobi, Kenya.</p>
+      <div class="col">
+        <h2>It is basically <strong>PIZZA!!!</strong></h2>
+        <h2>"Beauty comes in all shapes and sizes. <br> Small, large, circle, square, thin crust, <br> thick crust, stuffed crust, extra toppings."</h2>
+        <button id="order"><a href=""></a>Order Now!!</button>
       </div>
     </div>
     
-    <div class="row g-0 bg-light position-relative">
-      <div class="col-md-6 mb-md-0 p-md-4">
-        <img src="./Images/onion.jpg" class="w-100" alt="...">
-      </div>
-      <div class="col-md-6 p-4 ps-md-0">
-        <h2 class="mt-0">It is basically <strong>PIZZA!!!</strong></h2>
-        <h2>"Beauty comes in all shapes and sizes. Small, large, circle, square, thin crust, thick crust, stuffed crust, extra toppings."</h2>
-        <a href="#" class="stretched-link">Go somewhere</a>
-      </div>
-    </div>
     <div class="data">
       <h2 id="sales">Get your Order</h2>
 
@@ -73,7 +61,7 @@
         <option value="Ksh. 1200">Large Ksh. 1200</option>
       </select>
       
-      <h3>type of pizza crusting</h3>
+      <h3>Type of pizza crusting</h3>
       <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
         <option selected>Open this select menu</option>
         <option value="200">Stuffed crust  Ksh.200</option>
@@ -113,11 +101,12 @@
       
     </div>
 
-    <script>
-      function delivery() {
-        alert("Home delivery is Ksh. 320");
-      }
-      </script>
+    <div id="about" class="about">
+      <h1>About Us</h1>
+      <p>Pizza-Me is a Kenyan pizza restaurant franchise. It is the fourth largest pizza delivery restaurant chain in the the nation, with headquarters in Nairobi, Kenya.</p>
+    </div>
+    
+
       <script src="./js/main.js"></script>
   </body>
 
