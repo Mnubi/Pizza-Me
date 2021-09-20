@@ -12,14 +12,14 @@ body{
     text-align: center;
 }
 
-#order{
+#buy {
     background-color: black;
     font-size: 25px;
     padding: 30px;
     border-radius: 50%;
 }
 
-#order{
+#buy{
     height: 200px;
     width: 300px;
     animation: zoom-in-zoom-out 4s ease-in infinite;
@@ -37,7 +37,7 @@ body{
       }
 }
 
-.data{
+.form{
     padding-top: 10px;
     margin-left: 300px;
     align-items: center;
@@ -45,8 +45,13 @@ body{
     background-color: ;
 }
 
-.data h2{
+.form h2{
     text-align: center;
+}
+
+#btn {
+    color: black;
+    background-color: gold;
 }
 
 .about{
@@ -54,8 +59,14 @@ body{
     background-color: gold;
     background-position: center;
     color: red;
-    padding: 35px;
+    padding: 40px;
     margin-left: 150px;
     text-align: center;
-    border-radius: 5%;
+    border-radius: 20%;
+}
+
+.about hr{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
 }

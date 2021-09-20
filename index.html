@@ -8,7 +8,10 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css" type="text/css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
       <title>pizza</title>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     </head>
 
     <body>
@@ -23,6 +26,9 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Menu/Order</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About us</a>
@@ -47,26 +53,25 @@
         <h2>It is basically <strong>PIZZA!!!</strong></h2>
         <h2>"Beauty comes in all shapes and sizes. <br> Small, large, circle, square, thin crust, <br> thick crust, stuffed crust, extra toppings."</h2>
         <br><br>
-        <button id="order"><a href="#sales"></a>Order Now!!</button>
+        <button id="buy"><a href="#sales"></a>Order Now!!</button>
       </div>
     </div>
 
     <br><br><br>
     
-    <div class="data"  id="sales">
+    <div id="form" class="form">
       <h2><strong>Place Your order Now</strong></h2>
 
-      <h3>size of pizza</h3>
-
-      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+      <label for="size">Size of pizza</label>
+      <select id="size" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
         <option selected>Open this select menu</option>
         <option value="Ksh. 700">Regular Ksh. 700</option>
         <option value="Ksh. 900">Medium Ksh. 900</option>
         <option value="Ksh. 1200">Large Ksh. 1200</option>
       </select>
       
-      <h3>Type of pizza crusting</h3>
-      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+      <label for="crusting">Type of pizza crusting</label>
+      <select id="crusting" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
         <option selected>Open this select menu</option>
         <option value="200">Stuffed crust  Ksh.200</option>
         <option value="150">Thin crust  Ksh.150</option>
@@ -75,8 +80,8 @@
         <option value="350">Cheese crust  Ksh.350</option>
       </select>
 
-      <h3>Choose pizza toppings</h3>
-      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+      <label for="toppings">Choose pizza topping</label>
+      <select id="toppings" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
         <option selected>Open this select menu</option>
         <option value="100">onions 100/=</option>
         <option value="100">Sausages 100/=</option>
@@ -86,10 +91,10 @@
         <option value="130">Black olive 130/=</option>
       </select>
 
-      <h3>Number of pizza</h3>
-      <input class="form-control" type="number" placeholder="Default input" id="number">
+      <label for="quantity">Number of pizza</label>
+      <input  class="form-control" type="number" placeholder="Number of pizza" required id="quantity">
 
-      <h3>Form of delivery</h3>
+      <label for="">Form of delivery</label>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="pick-up">
         <label class="form-check-label" for="flexRadioDefault1">
@@ -102,6 +107,8 @@
           Home delivery 
         </label>
       </div>
+
+      <input id="submit" class="btn btn-primary" type="submit" value="Submit">
     </div>
     <br><br>
 
@@ -109,11 +116,28 @@
       <h1><strong>About Us</strong></h1>
       <br>
       <p>Pizza-Me is a Kenyan pizza restaurant franchise. It is the fourth largest pizza delivery restaurant chain in the the nation, with headquarters in Nairobi, Kenya.</p>
-      <p>We are forcused in bringing the American flavour in the African  </p>
+      <p>We are forcused in bringing the American flavour to our homeground with our african touch</p>
+      
+      <br>
+      <hr>
+      <span style="color: black;">
+        <h4>Get in touch with us</h4>
+      <p>contact us on:<br>072176322</p> 
+      
+      <br>
+
+      <p>Write to us:</p>
+      <p>Pizza-me restaurant</p>
+      <p>67611-00100</p>
+      <p>Nairobi</p>
+      </span>
     </div>
     
+    <div class=footer>
 
-      <script src="./js/main.js"></script>
+    </div>
+
+    <script src="./js/main.js"></script>
   </body>
 
 </html>
