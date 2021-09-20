@@ -71,9 +71,11 @@ body{
     font-weight: 600;
 }
 .footer{
+    background-color: black;
     text-align: center;
     padding: 15px;
     word-spacing: 10px;
+    margin-top: 5px;
 }
 .footer .fa{
     height: 28px;
