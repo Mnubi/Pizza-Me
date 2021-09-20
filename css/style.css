@@ -8,6 +8,9 @@ body{
     padding: 20px;
 }
 
+.row img{
+    border-radius: 5%;
+}
 .col{
     text-align: center;
 }
